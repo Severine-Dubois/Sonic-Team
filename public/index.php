@@ -33,14 +33,26 @@ $router->map(
     'main_home',
 );
 
+// Les designers
+$router->map(
+    'GET',
+    // Route/motif de l'url
+    "/designers",
+    // Destination
+    [
+        'controller' => 'sonic\Controllers\DesignersController',
+        'method' => 'designers',
+    ],
+    // Nom de la route 'pour référence interne à Altorouter
+    'designers',
+);
+
 //*-------------------------------------------------------------------
 //*------------------------- PARTIE DISPATCHER -----------------------
 //*-------------------------------------------------------------------
 
 // Y a t il une correspondance ? (entre la requête et nos routes)
 $match = $router->match();
-
-//dump($match);
 
 // Si une correspondance est trouvée
 

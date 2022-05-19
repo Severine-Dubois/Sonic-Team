@@ -20,6 +20,7 @@
 <nav>
     <ul>
         <a href="<?= $absoluteURL?>"><li>HOME</li></a>
+        <a href="<?= $router->generate('designers') ?>"><li>DESIGNERS</li></a>
         
     </ul>
 </nav>
