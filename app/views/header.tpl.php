@@ -13,6 +13,12 @@
 </head>
 <body>
 
+<audio id="my_audio" src="<?= $absoluteURL ?>/assets/sounds/sonic_ring.mp3"></audio>
+<div class="wrapper-loader">
+        <img src="<?= $absoluteURL ?>/assets/images/sonic_run.gif" alt="">
+        <div class="progress-bar" data-label="Loading..."></div>
+</div>
+
 
 <header>
     <img src="<?= $absoluteURL ?>/assets/images/Sonic_Team_Logo.svg" alt="sonic taem logo">
@@ -21,7 +27,6 @@
     <ul>
         <a href="<?= $absoluteURL?>"><li>HOME</li></a>
         <a href="<?= $router->generate('designers') ?>"><li>DESIGNERS</li></a>
-        
     </ul>
 </nav>
 
